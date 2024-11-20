@@ -4,7 +4,7 @@ beautifulsoup4
 black
 boto3
 boto3-stubs[lambda,s3]
-fastapi
+fastapi<0.89.0
 mangum
 orjson
 passlib
