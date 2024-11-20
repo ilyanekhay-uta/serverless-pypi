@@ -48,7 +48,7 @@ lambda_install_requires = [
     "mangum",
     "orjson",
     "passlib",
-    "pydantic",
+    "pydantic<2",
     "python-multipart",
     "requests",
 ]

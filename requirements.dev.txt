@@ -8,7 +8,7 @@ fastapi
 mangum
 orjson
 passlib
-pydantic
+pydantic<2
 python-multipart
 requests
 uvicorn
