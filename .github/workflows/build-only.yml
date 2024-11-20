@@ -17,6 +17,10 @@ jobs:
       - name: Install Deps
         run: pip3.9 install lambda-setuptools twine
 
-      - name: Upload
+      - name: Build
         run: |
           python3.9 setup.py sdist ldist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          path: dist/*
