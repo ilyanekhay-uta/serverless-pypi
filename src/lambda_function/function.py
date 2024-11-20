@@ -139,7 +139,7 @@ class PyPIMeta(BaseModel, json_dumps=orjson_dumps, json_loads=orjson.loads):
 
     @validator("api_version")
     def api_version_validator(cls, value: str) -> str:
-        if value != "1.0":
+        if not re.match(r"1\.[0-9]+", value):
             raise ValueError(f"Received an unknown 'api-version': {value}")
         return value
 
